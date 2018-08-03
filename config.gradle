@@ -21,7 +21,7 @@ ext {
             leakcanary : '1.5.4',
             // test
             junit      : '4.12',
-            robolectric: '3.1.2'
+            robolectric: '3.2.1'
     ]
 
     depConfig = [
@@ -41,7 +41,9 @@ ext {
             glide               : "com.github.bumptech.glide:glide:$versionConfig.glide",
 
             junit               : "junit:junit:$versionConfig.junit",
-            robolectric         : "org.robolectric:robolectric:$versionConfig.robolectric",
+//            robolectric         : "org.robolectric:robolectric:$versionConfig.robolectric"
+            robolectric         : "org.robolectric:robolectric:3.8"
+
     ]
 
     configAndroidDomain = this.&configAndroidDomain
@@ -165,7 +167,7 @@ def configUtilCodeDependencies(Project pro) {
         compileOnly depConfig.support.design
 
         testImplementation depConfig.junit
-        testImplementation depConfig.robolectric
+//        testImplementation depConfig.robolectric
         testImplementation depConfig.support.appcompat_v7
     }
 }
@@ -181,6 +183,6 @@ def configSubUtilDependencies(Project pro) {
         }
 
         testImplementation depConfig.junit
-        testImplementation depConfig.robolectric
+//        testImplementation depConfig.robolectric
     }
 }
