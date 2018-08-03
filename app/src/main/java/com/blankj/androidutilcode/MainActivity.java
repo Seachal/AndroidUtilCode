@@ -62,6 +62,10 @@ public class MainActivity extends BaseDrawerActivity {
 
     }
 
+    /**
+     * 展示核心util
+     * @param view
+     */
     public void coreUtilClick(View view) {
         CoreUtilActivity.start(this);
     }

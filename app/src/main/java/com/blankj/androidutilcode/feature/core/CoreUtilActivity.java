@@ -74,6 +74,10 @@ public class CoreUtilActivity extends BaseBackActivity {
 
     }
 
+    /**
+     * activityUtils  demo
+     * @param view
+     */
     public void activityClick(View view) {
         ActivityActivity.start(this);
     }
